@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Sidebar Navigation -->
+      <nav class="sidebar">
+        <div class="sidebar-top">
+          <button class="menu-button" aria-label="Menu">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3 18V16L21 16V18H3ZM3 13L3 11L21 11V13L3 13ZM3 8L3 6L21 6V8L3 8Z"
+                fill="#414942"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <ul class="nav-links">
+          <li class="nav-item active">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_home)">
+                  <path
+                    d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"
+                    fill="#0C1F13"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_home">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-label">Home</span>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_blog)">
+                  <path
+                    d="M14.06 9.02L14.98 9.94L5.92 19H5V18.08L14.06 9.02V9.02ZM17.66 3C17.41 3 17.15 3.1 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C18.17 3.09 17.92 3 17.66 3V3ZM14.06 6.19L3 17.25V21H6.75L17.81 9.94L14.06 6.19V6.19Z"
+                    fill="#414942"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_blog">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-label">Blog</span>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 20V17.225C0 16.6583 0.141667 16.1333 0.425 15.65C0.708333 15.1667 1.1 14.8 1.6 14.55C1.83333 14.4333 2.05833 14.325 2.275 14.225C2.50833 14.125 2.75 14.0333 3 13.95V20H0ZM4 13C3.16667 13 2.45833 12.7083 1.875 12.125C1.29167 11.5417 1 10.8333 1 10C1 9.16667 1.29167 8.45833 1.875 7.875C2.45833 7.29167 3.16667 7 4 7C4.83333 7 5.54167 7.29167 6.125 7.875C6.70833 8.45833 7 9.16667 7 10C7 10.8333 6.70833 11.5417 6.125 12.125C5.54167 12.7083 4.83333 13 4 13ZM4 11C4.28333 11 4.51667 10.9083 4.7 10.725C4.9 10.525 5 10.2833 5 10C5 9.71667 4.9 9.48333 4.7 9.3C4.51667 9.1 4.28333 9 4 9C3.71667 9 3.475 9.1 3.275 9.3C3.09167 9.48333 3 9.71667 3 10C3 10.2833 3.09167 10.525 3.275 10.725C3.475 10.9083 3.71667 11 4 11ZM4 20V17.2C4 16.6333 4.14167 16.1167 4.425 15.65C4.725 15.1667 5.11667 14.8 5.6 14.55C6.63333 14.0333 7.68333 13.65 8.75 13.4C9.81667 13.1333 10.9 13 12 13C13.1 13 14.1833 13.1333 15.25 13.4C16.3167 13.65 17.3667 14.0333 18.4 14.55C18.8833 14.8 19.2667 15.1667 19.55 15.65C19.85 16.1167 20 16.6333 20 17.2V20H4ZM6 18H18V17.2C18 17.0167 17.95 16.85 17.85 16.7C17.7667 16.55 17.65 16.4333 17.5 16.35C16.6 15.9 15.6917 15.5667 14.775 15.35C13.8583 15.1167 12.9333 15 12 15C11.0667 15 10.1417 15.1167 9.225 15.35C8.30833 15.5667 7.4 15.9 6.5 16.35C6.35 16.4333 6.225 16.55 6.125 16.7C6.04167 16.85 6 17.0167 6 17.2V18ZM12 12C10.9 12 9.95833 11.6083 9.175 10.825C8.39167 10.0417 8 9.1 8 8C8 6.9 8.39167 5.95833 9.175 5.175C9.95833 4.39167 10.9 4 12 4C13.1 4 14.0417 4.39167 14.825 5.175C15.6083 5.95833 16 6.9 16 8C16 9.1 15.6083 10.0417 14.825 10.825C14.0417 11.6083 13.1 12 12 12ZM12 10C12.55 10 13.0167 9.80833 13.4 9.425C13.8 9.025 14 8.55 14 8C14 7.45 13.8 6.98333 13.4 6.6C13.0167 6.2 12.55 6 12 6C11.45 6 10.975 6.2 10.575 6.6C10.1917 6.98333 10 7.45 10 8C10 8.55 10.1917 9.025 10.575 9.425C10.975 9.80833 11.45 10 12 10ZM20 13C19.1667 13 18.4583 12.7083 17.875 12.125C17.2917 11.5417 17 10.8333 17 10C17 9.16667 17.2917 8.45833 17.875 7.875C18.4583 7.29167 19.1667 7 20 7C20.8333 7 21.5417 7.29167 22.125 7.875C22.7083 8.45833 23 9.16667 23 10C23 10.8333 22.7083 11.5417 22.125 12.125C21.5417 12.7083 20.8333 13 20 13ZM20 11C20.2833 11 20.5167 10.9083 20.7 10.725C20.9 10.525 21 10.2833 21 10C21 9.71667 20.9 9.48333 20.7 9.3C20.5167 9.1 20.2833 9 20 9C19.7167 9 19.475 9.1 19.275 9.3C19.0917 9.48333 19 9.71667 19 10C19 10.2833 19.0917 10.525 19.275 10.725C19.475 10.9083 19.7167 11 20 11ZM21 20V13.95C21.25 14.0333 21.4833 14.125 21.7 14.225C21.9333 14.325 22.1667 14.4333 22.4 14.55C22.9 14.8 23.2917 15.1667 23.575 15.65C23.8583 16.1333 24 16.6583 24 17.225V20H21Z"
+                  fill="#414942"
+                ></path>
+              </svg>
+            </div>
+            <span class="nav-label">Forum</span>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_school)">
+                  <path
+                    d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z"
+                    fill="#414942"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_school">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-label">School</span>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_projects)">
+                  <path
+                    d="M14 6L13 4H5V21H7V14H12L13 16H20V6H14ZM18 14H14L13 12H7V6H12L13 8H18V14Z"
+                    fill="#414942"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_projects">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-label">Projects</span>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-icon-wrapper">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_photos)">
+                  <path
+                    d="M14.12 4L15.95 6H20V18H4V6H8.05L9.88 4H14.12V4ZM15 2H9L7.17 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4H16.83L15 2ZM12 9C13.65 9 15 10.35 15 12C15 13.65 13.65 15 12 15C10.35 15 9 13.65 9 12C9 10.35 10.35 9 12 9ZM12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12C17 9.24 14.76 7 12 7Z"
+                    fill="#414942"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_photos">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <span class="nav-label">Photos</span>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Main Content Area -->
+      <div class="content-wrapper">
+        <!-- Header -->
+        <header class="header">
+          <div class="profile-section">
+            <div class="profile-avatar">
+              <svg
+                width="36"
+                height="36"
+                viewBox="0 0 36 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="35"
+                  height="35"
+                  rx="17.5"
+                  fill="#4F6354"
+                ></rect>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M23.535 15.618C23.535 18.7207 21.0569 21.2359 18 21.2359C14.9431 21.2359 12.465 18.7207 12.465 15.618C12.465 12.5152 14.9431 10 18 10C21.0569 10 23.535 12.5152 23.535 15.618ZM21.69 15.618C21.69 17.6864 20.0379 19.3633 18 19.3633C15.9621 19.3633 14.31 17.6864 14.31 15.618C14.31 13.5495 15.9621 11.8727 18 11.8727C20.0379 11.8727 21.69 13.5495 21.69 15.618Z"
+                  fill="#F6FBF3"
+                ></path>
+                <path
+                  d="M18 24.0449C12.0273 24.0449 6.93848 27.6295 5 32.6517C5.47223 33.1276 5.96968 33.5778 6.49015 34C7.93363 29.3892 12.4619 25.9176 18 25.9176C23.5381 25.9176 28.0664 29.3892 29.5098 34C30.0303 33.5778 30.5278 33.1276 31 32.6517C29.0615 27.6296 23.9727 24.0449 18 24.0449Z"
+                  fill="#F6FBF3"
+                ></path>
+              </svg>
+            </div>
+          </div>
+          <h1 class="site-title">DMessham.ca</h1>
+          <div class="header-actions">
+            <button class="menu-dots-button" aria-label="Menu options">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 20C11.45 20 10.9792 19.8042 10.5875 19.4125C10.1958 19.0208 10 18.55 10 18C10 17.45 10.1958 16.9792 10.5875 16.5875C10.9792 16.1958 11.45 16 12 16C12.55 16 13.0208 16.1958 13.4125 16.5875C13.8042 16.9792 14 17.45 14 18C14 18.55 13.8042 19.0208 13.4125 19.4125C13.0208 19.8042 12.55 20 12 20ZM12 14C11.45 14 10.9792 13.8042 10.5875 13.4125C10.1958 13.0208 10 12.55 10 12C10 11.45 10.1958 10.9792 10.5875 10.5875C10.9792 10.1958 11.45 10 12 10C12.55 10 13.0208 10.1958 13.4125 10.5875C13.8042 10.9792 14 11.45 14 12C14 12.55 13.8042 13.0208 13.4125 13.4125C13.0208 13.8042 12.55 14 12 14ZM12 8C11.45 8 10.9792 7.80417 10.5875 7.4125C10.1958 7.02083 10 6.55 10 6C10 5.45 10.1958 4.97917 10.5875 4.5875C10.9792 4.19583 11.45 4 12 4C12.55 4 13.0208 4.19583 13.4125 4.5875C13.8042 4.97917 14 5.45 14 6C14 6.55 13.8042 7.02083 13.4125 7.4125C13.0208 7.80417 12.55 8 12 8Z"
+                  fill="#414942"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+          <section class="welcome-section">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/7297d3ba897156e224a4bd5475409637fa6098df"
+              alt="Welcome image"
+              class="welcome-image"
+            />
+            <div class="welcome-content">
+              <div class="welcome-text">
+                <h2 class="welcome-title">Welcome to my website</h2>
+                <p class="welcome-date">Published date</p>
+                <p class="welcome-description">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                  irure dolor in reprehenderit in voluptate velit esse cillum
+                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                  cupidatat non proident, sunt in culpa qui officia deserunt
+                  mollit anim id est laborum.
+                </p>
+              </div>
+              <button class="download-button">Download</button>
+            </div>
+          </section>
+
+          <section class="section-container">
+            <div class="section-header">
+              <h2 class="section-title">Section title</h2>
+              <button class="arrow-button" aria-label="View more">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.175 13H4V11H16.175L10.575 5.4L12 4L20 12L12 20L10.575 18.6L16.175 13Z"
+                    fill="#181D19"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="card-container">
+              <article class="content-card">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/2b583bf08a67086cc09bc06adf8e4c3976c37602"
+                  alt=""
+                  class="card-image"
+                />
+                <div class="card-content">
+                  <div class="card-text">
+                    <h3 class="card-title">Title</h3>
+                    <p class="card-description">
+                      Description duis aute irure dolor in reprehenderit in
+                      voluptate velit.
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="card-meta">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 17H13V13H17V11H13V7H11V11H7V13H11V17ZM12 22C10.6167 22 9.31667 21.7417 8.1 21.225C6.88333 20.6917 5.825 19.975 4.925 19.075C4.025 18.175 3.30833 17.1167 2.775 15.9C2.25833 14.6833 2 13.3833 2 12C2 10.6167 2.25833 9.31667 2.775 8.1C3.30833 6.88333 4.025 5.825 4.925 4.925C5.825 4.025 6.88333 3.31667 8.1 2.8C9.31667 2.26667 10.6167 2 12 2C13.3833 2 14.6833 2.26667 15.9 2.8C17.1167 3.31667 18.175 4.025 19.075 4.925C19.975 5.825 20.6833 6.88333 21.2 8.1C21.7333 9.31667 22 10.6167 22 12C22 13.3833 21.7333 14.6833 21.2 15.9C20.6833 17.1167 19.975 18.175 19.075 19.075C18.175 19.975 17.1167 20.6917 15.9 21.225C14.6833 21.7417 13.3833 22 12 22ZM12 20C14.2333 20 16.125 19.225 17.675 17.675C19.225 16.125 20 14.2333 20 12C20 9.76667 19.225 7.875 17.675 6.325C16.125 4.775 14.2333 4 12 4C9.76667 4 7.875 4.775 6.325 6.325C4.775 7.875 4 9.76667 4 12C4 14.2333 4.775 16.125 6.325 17.675C7.875 19.225 9.76667 20 12 20Z"
+                          fill="#181D19"
+                        ></path>
+                      </svg>
+                      <span class="meta-text">Today</span>
+                      <span class="meta-separator">•</span>
+                      <span class="meta-text">23 min</span>
+                    </div>
+                    <button class="play-button" aria-label="Play">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M8 19V5L19 12L8 19Z" fill="#181D19"></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+        </main>
+
+        <!-- Media Player Footer -->
+        <footer class="media-player">
+          <div class="progress-container">
+            <div class="progress-bar">
+              <div class="progress-start">
+                <svg
+                  width="44"
+                  height="8"
+                  viewBox="0 0 44 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M42 2L32 2L12 2L2 2"
+                    stroke="#2C6A45"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+              <div class="progress-end">
+                <svg
+                  width="207"
+                  height="8"
+                  viewBox="0 0 207 8"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 2H52.75H154.25H205"
+                    stroke="#2C6A45"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="progress-indicator">
+              <div class="progress-track">
+                <div class="progress-thumb"></div>
+              </div>
+              <div class="progress-dot"></div>
+            </div>
+          </div>
+
+          <div class="player-controls">
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/3199448df1ef296571c62df6fd90028a045eec36"
+              alt=""
+              class="track-image"
+            />
+            <div class="track-info">
+              <h3 class="track-title">Title</h3>
+              <p class="track-artist">Artist</p>
+            </div>
+            <div class="playback-controls">
+              <button class="control-button pause-button" aria-label="Pause">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14 19V5H18V19H14ZM6 19V5H10V19H6Z"
+                    fill="#414942"
+                  ></path>
+                </svg>
+              </button>
+              <button class="control-button next-button" aria-label="Next">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.5 18V6H18.5V18H16.5ZM5.5 18V6L14.5 12L5.5 18Z"
+                    fill="#414942"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
