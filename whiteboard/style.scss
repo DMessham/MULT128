@@ -1,22 +1,20 @@
-// Define variables
-$primary-color: 
-#3498db;
-$text-color: 
-#2c3e50;
+@import 'variables';
+@import 'base';
+@import 'navigation';
 
-// Use the variables
 .content {
-  background-color: $primary-color;
-  color: $text-color;
-  padding: 20px;
-  border-radius: 5px;
+    margin-left:42px;
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
+    border-radius: 5px;
 
-  h1 {
-    font-size: 2em;
-  }
+    h1 {
+        font-size: 2.5em;
+    }
 
-  p {
-    font-size: 1em;
-    opacity: 0.8;
-  }
+    p {
+        font-size: 1em;
+        opacity: 0.8;
+    }
 }

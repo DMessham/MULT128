@@ -1,0 +1,125 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #132812;
+}
+
+body > header {
+  position: sticky;
+  top: 6px;
+}
+
+nav {
+  border-radius: 5px 5px 0 0;
+  z-index: 90;
+}
+nav ul {
+  list-style: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 2px;
+}
+nav ul li {
+  display: inline-block;
+  padding: 2px;
+}
+nav ul li a {
+  text-decoration: none;
+  line-height: 18px;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: baseline;
+  color: #fff;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px transparent solid;
+}
+nav ul li a .iconify {
+  font-size: 18px;
+}
+nav ul li a:hover {
+  color: #84ac88;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+nav ul li a.current {
+  background: #84ac88;
+  color: rgba(0, 0, 0, 0.8);
+}
+nav.breadcrumb {
+  display: inline-block;
+  height: 30px;
+}
+nav.breadcrumb li {
+  margin-right: 2px;
+}
+nav.breadcrumb li a {
+  border-radius: 4px;
+}
+nav.breadcrumb li a:hover {
+  color: #84ac88;
+}
+nav.breadcrumb li a.current {
+  background: #84ac88;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.leftbar {
+  float: left;
+  flex-flow: column;
+  flex-wrap: nowrap;
+  margin: 0;
+  overflow: visible;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 2px;
+}
+.leftbar li {
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: visible;
+  display: block;
+  width: 26px;
+  padding: 2px;
+}
+.leftbar li:nth-child(2) {
+  margin-top: 8px;
+}
+.leftbar li a {
+  transition: color 0.1s ease-in-out;
+  display: flex;
+  vertical-align: middle;
+  line-height: 0.8em;
+  line-height: 20px;
+  font-size: 17px;
+}
+.leftbar li a .iconify {
+  font-size: 20px;
+}
+.leftbar li a .label {
+  transition: width 0.3s ease-in-out;
+  display: none;
+}
+.leftbar li a:hover {
+  width: -moz-fit-content;
+  width: fit-content;
+  z-index: 95;
+  border: 1px #84ac88 solid;
+}
+.leftbar li a:hover .label {
+  margin-left: 3px;
+  display: inline;
+}
+
+.content {
+  margin-left: 42px;
+  background-color: #84ac88;
+  color: #132812;
+  padding: 20px;
+  border-radius: 5px;
+}
+.content h1 {
+  font-size: 2.5em;
+}
+.content p {
+  font-size: 1em;
+  opacity: 0.8;
+}/*# sourceMappingURL=style.css.map */
