@@ -80,8 +80,10 @@ nav.breadcrumb li a.current {
   width: 26px;
   padding: 2px;
 }
-.leftbar li:nth-child(2) {
-  margin-top: 8px;
+.leftbar li:has(hr) {
+  padding: 0 2px;
+  height: 12px;
+  margin-top: -6px;
 }
 .leftbar li a {
   transition: color 0.1s ease-in-out;

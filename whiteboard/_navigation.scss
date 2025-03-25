@@ -76,8 +76,10 @@ nav {
         display:block;
         width:26px;
         padding:2px;
-        &:nth-child(2){
-            margin-top:8px;
+        &:has(hr){
+            padding:0 2px;
+            height:12px;
+            margin-top:-6px;
         }
         a{
             transition: color 0.1s ease-in-out;
