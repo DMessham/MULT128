@@ -2,7 +2,7 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
-.msg, .msg-error, .msg-danger, .msg-warning, .msg-info {
+.msg, .msg-success, .msg-error, .msg-danger, .msg-warning, .msg-info {
   border: 2px solid #2d2d2d;
   border-radius: 5px;
   background: #464646;
@@ -13,12 +13,12 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-.msg:hover, .msg-error:hover, .msg-danger:hover, .msg-warning:hover, .msg-info:hover {
+.msg:hover, .msg-success:hover, .msg-error:hover, .msg-danger:hover, .msg-warning:hover, .msg-info:hover {
   background: #606060;
   border: 2px solid #393939;
 }
 
-.msg h1, .msg-error h1, .msg-danger h1, .msg-warning h1, .msg-info h1 {
+.msg h1, .msg-success h1, .msg-error h1, .msg-danger h1, .msg-warning h1, .msg-info h1 {
   margin: 0 0 0.2em 0;
 }
 
@@ -56,6 +56,15 @@ body {
 .msg-error:hover {
   background: #a53131;
   border: 2px solid #6a1f1f;
+}
+
+.msg-success {
+  background: #22531f;
+  border: 2px solid #132e11;
+}
+.msg-success:hover {
+  background: #31782d;
+  border: 2px solid #1a4018;
 }
 
 body > main {
