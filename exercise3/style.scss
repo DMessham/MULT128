@@ -1,18 +1,4 @@
-$primary-color: 
-#84ac88;
-$text-color: 
-#132812;
-
-$nav-bg:
-#000c;
-
-$msg-bg:#464646;
-$msg-border:#818181;
-$msg-txt:white;
-
-$info-color:#1b3646;
-$warn-color:#46451b;
-$error-color:#462c1b;
+@import 'colors';
 
 body{
     font-family: 'Helvetica', sans-serif;
@@ -20,7 +6,7 @@ body{
 
 
 .msg {
-    border: 2px solid $msg-border;
+    border: 2px solid darken($color: $msg-bg, $amount: 20%);
     border-radius: 5px;
     background: $msg-bg;
     font-size: 1rem;
@@ -30,7 +16,7 @@ body{
     display: inline-block;
     cursor: pointer;
     &:hover{
-        background: darken($color: &$msg-bg, $amount: 11);
+        background: lighten($color: $msg-bg, $amount: 10%);
     }
 }
 
@@ -38,18 +24,36 @@ body{
     margin: 0 0 0.2em 0;
 }
 
-.info-msg{
+.msg-info{
     @extend .msg;
 
-}
-.warn-msg{
-    @extend .msg;
+    &:hover{
+        background: lighten($color: $info-color, $amount: 10%);
+    }
 
 }
-.error-msg{
+.msg-warning{
     @extend .msg;
 
+    &:hover{
+        background: lighten($color: $warn-color, $amount: 10%);
+    }
+
 }
+.msg-danger{
+    @extend .msg;
+
+    &:hover{
+        background: darken($color: $danger-color, $amount: 10%);
+    }
+}
+
+// @each{
+
+// }
+
+
+
 
 
 body > main{

@@ -2,8 +2,8 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
-.msg {
-  border: 2px solid #818181;
+.msg, .msg-danger, .msg-warning, .msg-info {
+  border: 2px solid #131313;
   border-radius: 5px;
   background: #464646;
   font-size: 1rem;
@@ -13,12 +13,24 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-.msg:hover {
-  background: black;
+.msg:hover, .msg-danger:hover, .msg-warning:hover, .msg-info:hover {
+  background: #606060;
 }
 
-.msg h1 {
+.msg h1, .msg-danger h1, .msg-warning h1, .msg-info h1 {
   margin: 0 0 0.2em 0;
+}
+
+.msg-info:hover {
+  background: #29526b;
+}
+
+.msg-warning:hover {
+  background: #656b29;
+}
+
+.msg-danger:hover {
+  background: #211b0d;
 }
 
 body > main {
