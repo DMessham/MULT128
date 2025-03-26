@@ -1,11 +1,28 @@
 body {
   font-family: "Helvetica", sans-serif;
-  color: #132812;
-  background: #162016;
 }
 
-.container {
-  padding: 15px;
+.msg {
+  border: 2px solid #818181;
+  border-radius: 5px;
+  background: #464646;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 1.25rem;
+  margin: 0.25em 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.msg:hover {
+  background: black;
+}
+
+.msg h1 {
+  margin: 0 0 0.2em 0;
+}
+
+body > main {
+  margin-left: 42px;
 }
 
 body > header {
@@ -114,36 +131,4 @@ nav.breadcrumb li a.current {
 .leftbar li a:hover .label {
   margin-left: 3px;
   display: inline;
-}
-
-.content {
-  margin-left: 42px;
-  background-color: #84ac88;
-  color: #132812;
-  padding: 20px;
-  border-radius: 5px;
-}
-.content h1 {
-  font-size: 2.5em;
-}
-.content p {
-  font-size: 1em;
-  opacity: 0.8;
-}
-
-.fc-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.fl-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.btn-base, .btl-primary {
-  padding: 5px 3px;
-  border-radius: 3px;
 }/*# sourceMappingURL=style.css.map */
