@@ -1,110 +1,131 @@
-
+$nav-contentheight:20px;
+$leftbar-cwidth:24px;
+$nav-padding:2px;
 body > main{
-    margin-left:42px;
-    }
-    body > header{
-        position: sticky;
-        top:6px;
-    }
-    nav {
-        border-radius: 5px 5px 0 0;
-        z-index: 90;
-        ul {
-            list-style: none;
-            border-radius: 5px;
-            background-color: $nav-bg;
-            display: flex;
-            padding:2px;
-            li {
-                display: inline-block;
-                padding:2px;
-                a {
-                    text-decoration: none;
-                    line-height:18px;
-                    font-size:16px;
-                    text-align: center;
-                    vertical-align: baseline;
-                    color:#fff;
-                    padding:2px;
-                    border-radius: 5px;
-                    border: 1px transparent solid;
-                    .iconify{
-                        font-size:18px;
-                    }
-                    &:hover { // Using & to reference the parent selector
-                        color: $primary-color;
-                        background-color: $nav-bg;
-                    }
-                    &.current{
-                        background: $primary-color;
-                        color:$nav-bg;
-                    }
-                }
-            }
-        }
-        &.breadcrumb{
-            display:inline-block;
-            height:30px;
-                li {
-                    margin-right: 2px;
-                a {
-                    border-radius: 4px;
-                    &:hover { // Using & to reference the parent selector
-                        color: $primary-color;
-                        }
-                    &.current{
-                        background: $primary-color;
-                        color:$nav-bg;
-                        
-                        }
-                    }
-                }
-        }
-    }
-    .leftbar{
-        float:left;
-        flex-flow: column;
-        flex-wrap:nowrap;
+    margin-left:$leftbar-cwidth*2;
+}
+body > header{
+    position: sticky;
+    top: $nav-padding*3;
+    border-radius: $nav-padding*4;
     
-        margin:0;
-        overflow: visible;
+}
+nav {
+    border-radius: $nav-padding*4;
+    z-index: 90;
+    margin:0;
+    padding:0;
+    background-clip: padding-box;
+    ul {
+        list-style: none;
         
         background-color: $nav-bg;
-        padding-left: 2px;
-        li{
-            width: fit-content;
-            overflow: visible;
-            display:block;
-            width:26px;
-            padding:2px;
-            &:has(hr){
-                padding:0 2px;
-                height:12px;
-                margin-top:-6px;
-            }
+        display: flex;
+        padding:$nav-padding;
+        margin:0;
+        :first-child{
+            min-width:$leftbar-cwidth;
+        }
+        li {
+            display: inline-block;
+            padding:$nav-padding;
+            height:$nav-contentheight+($nav-padding*3);
             a{
                 transition: color 0.1s ease-in-out;
                 display:flex;
                 vertical-align: middle;
-                line-height:0.8em;
-                line-height:20px;
-                font-size:17px;
+                line-height:$nav-contentheight;
+                font-size:$nav-contentheight - $nav-padding;
+                text-decoration: none;
+                text-align: center;
+                vertical-align: baseline;
+                color:#fff;
+                border-radius: $nav-padding*2;
+                border: 1px transparent solid;
                 .iconify{
-                    font-size:20px;
+                    font-size:$nav-contentheight;
+                    padding:$nav-padding;
                 }
                 .label{
-                    transition: width 0.3s ease-in-out;
-                    display:none
+                    padding:$nav-padding;
+                    padding-left:$nav-padding/2;
+                    padding-right:$nav-padding*2;
                 }
-                &:hover{
-                    width: fit-content;
-                    z-index: 95;
-                    border: 1px $primary-color solid;
-                    .label{
-                        margin-left:3px;
-                        display:inline;
-                    }
+                &:hover { // Using & to reference the parent selector
+                    color: $nav-accent;
+                    background-color: $nav-bg;
+                    border: 1px $nav-accent solid;
+                }
+                &.current{
+                    background: $nav-accent;
+                    color:$nav-bg;
                 }
             }
         }
     }
+    &.breadcrumb{
+        display:inline-block;
+        li {
+            margin-right: $nav-padding;
+            a {
+                border-radius: $nav-padding*2;
+            }
+        }
+    }
+}
+.leftbar{
+    float:left;
+    flex-flow: column;
+    flex-wrap:nowrap;
+
+    margin:0;
+    overflow: visible;
+    
+    background-color: $nav-bg;
+    padding-left: $nav-padding;
+
+    height: calc((100vh) - ($nav-contentheight + $nav-padding*8)) ;
+    li{
+        width: fit-content;
+        overflow: visible;
+        display:block;
+        width:$leftbar-cwidth+($nav-padding*4);
+        margin: $nav-padding 0;
+        &:has(hr){
+            padding:0;
+            margin:0;
+            height:$nav-padding;
+            margin-top:$nav-padding;
+        }
+        hr{
+            padding:0;
+            margin:0;
+            margin-left:$nav-padding*2;
+            width:$nav-padding*2;
+            height:0;
+        }
+        &:first-child{
+            margin-top:0;
+            padding-top:0;
+        }
+        a{
+            line-height:$leftbar-cwidth;
+            font-size:20px;
+            .label{
+                transition: width 0.3s ease-in-out;
+                display:none
+            }
+            .iconify{
+                font-size:$leftbar-cwidth;
+            }
+            &:hover{
+                width: fit-content;
+                z-index: 95;
+                .label{
+                    margin-left:$nav-padding;
+                    display:inline;
+                }
+            }
+        }
+    }
+}
