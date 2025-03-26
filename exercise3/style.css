@@ -3,7 +3,7 @@ body {
 }
 
 .msg, .msg-error, .msg-danger, .msg-warning, .msg-info {
-  border: 2px solid #131313;
+  border: 2px solid #2d2d2d;
   border-radius: 5px;
   background: #464646;
   font-size: 1rem;
@@ -15,6 +15,7 @@ body {
 }
 .msg:hover, .msg-error:hover, .msg-danger:hover, .msg-warning:hover, .msg-info:hover {
   background: #606060;
+  border: 2px solid #393939;
 }
 
 .msg h1, .msg-error h1, .msg-danger h1, .msg-warning h1, .msg-info h1 {
@@ -23,38 +24,38 @@ body {
 
 .msg-info {
   background: #1b3646;
-  border: 2px solid black;
+  border: 2px solid #0d1a21;
 }
 .msg-info:hover {
   background: #29526b;
-  border: 2px solid #0d1a21;
+  border: 2px solid #142834;
 }
 
 .msg-warning {
-  background: #676e2b;
-  border: 2px solid #22250e;
+  background: #897f17;
+  border: 2px solid #5d5710;
 }
 .msg-warning:hover {
-  background: #899339;
-  border: 2px solid #45491d;
+  background: #b5a71e;
+  border: 2px solid #736b13;
 }
 
 .msg-danger {
-  background: #8a6417;
-  border: 2px solid #332508;
+  background: #8a5e17;
+  border: 2px solid #5e4010;
 }
 .msg-danger:hover {
-  background: #b6841e;
-  border: 2px solid #5e4410;
+  background: #b67c1e;
+  border: 2px solid #744f13;
 }
 
 .msg-error {
-  background: #932a2a;
-  border: 2px solid #441313;
+  background: #7e2525;
+  border: 2px solid #571919;
 }
 .msg-error:hover {
-  background: #bb3535;
-  border: 2px solid #6b1f1f;
+  background: #a53131;
+  border: 2px solid #6a1f1f;
 }
 
 body > main {
