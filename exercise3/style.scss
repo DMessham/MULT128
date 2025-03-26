@@ -24,38 +24,57 @@ body{
     margin: 0 0 0.2em 0;
 }
 
-.msg-info{
-    @extend .msg;
+// .msg-info{
+//     @extend .msg;
 
-    &:hover{
-        background: lighten($color: $info-color, $amount: 10%);
-    }
-
-}
-.msg-warning{
-    @extend .msg;
-
-    &:hover{
-        background: lighten($color: $warn-color, $amount: 10%);
-    }
-
-}
-.msg-danger{
-    @extend .msg;
-
-    &:hover{
-        background: darken($color: $danger-color, $amount: 10%);
-    }
-}
-
-// @each{
+//     &:hover{
+//         background: lighten($color: $info-color, $amount: 10%);
+//     }
 
 // }
+// .msg-warning{
+//     @extend .msg;
+
+//     &:hover{
+//         background: lighten($color: $warn-color, $amount: 10%);
+//     }
+
+// }
+// .msg-danger{
+//     @extend .msg;
+
+//     &:hover{
+//         background: darken($color: $danger-color, $amount: 10%);
+//     }
+// }
+
+// all these classes are the same, with just one line different
+// doing the same thing for info,warn,danger with only the word changing
+
+//use a map and key/value stores, js equivilent is objects
+$theme-colors: (
+    info: $info-color,
+    warning: $warn-color,
+    danger: $danger-color,
+    error: $error-color
+);
+
+@each $name, $bg_color in $theme-colors{
+    .msg-#{$name} {
+        @extend .msg;
+        background: #{$bg_color};
+        border: 2px solid darken($color: $bg_color, $amount: 20%);
+        &:hover{
+            background: lighten($color: $bg_color, $amount: 10%);
+            border: 2px solid darken($color: $bg_color, $amount: 10%);
+        }
+    }
+}
 
 
 
 
-
+// copypasted from old code
 body > main{
 margin-left:42px;
 }
