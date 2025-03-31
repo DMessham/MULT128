@@ -1,9 +1,62 @@
 body {
     font-family: 'Helvetica', sans-serif;
-    color: $text-color;
-    background:#162016
+    background:#162016;
+    color:white;
   }
 
   .container {
     padding: $padding;
   }
+
+  .msg {
+    border: 2px solid darken($color: $msg-bg, $amount: 10%);
+    border-radius: 5px;
+    background: $msg-bg;
+    font-size: 1rem;
+    color: $msg-txt;
+    padding: 1rem 1.25rem;
+    margin: 0.25em 0;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        background: lighten($color: $msg-bg, $amount: 10%);
+        border: 2px solid darken($color: $msg-bg, $amount: 5%);
+    }
+}
+
+.msg h1 {
+    margin: 0 0 0.2em 0;
+}
+
+$theme-colors: (
+  info: $info-color,
+  warning: $warn-color,
+  danger: $danger-color,
+  error: $error-color,
+  success: $success-color
+);
+
+@each $name, $bg_color in $theme-colors{
+    .msg-#{$name} {
+        @extend .msg;
+        background: #{$bg_color};
+        border: 2px solid darken($color: $bg_color, $amount: 10%);
+        &:hover{
+            background: lighten($color: $bg_color, $amount: 10%);
+            border: 2px solid darken($color: $bg_color, $amount: 5%);
+        }
+    }
+}
+
+#testDiv {
+  position: relative;
+  width: 150px;
+  height: 100px;
+  padding: 20px;
+  background: 
+#b3c8d0;
+  border: 1px solid 
+black;
+  font-size: 16pt;
+  cursor: pointer;
+}

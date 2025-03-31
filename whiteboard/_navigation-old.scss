@@ -1,0 +1,110 @@
+body > header{
+    position: sticky;
+    top:6px;
+}
+
+nav {
+    // background-color: $nav-bg;
+    border-radius: 5px 5px 0 0;
+    z-index: 90;
+    ul {
+        list-style: none;
+        border-radius: 5px;
+        background-color: $nav-bg;
+        display: flex;
+        padding:2px;
+        li {
+            display: inline-block;
+            padding:2px;
+            a {
+                text-decoration: none;
+                line-height:18px;
+                font-size:16px;
+                text-align: center;
+                vertical-align: baseline;
+                color:#fff;
+                padding:2px;
+                border-radius: 5px;
+                border: 1px transparent solid;
+                .iconify{
+                    font-size:18px;
+                }
+                &:hover { // Using & to reference the parent selector
+                    color: $primary-color;
+                    background-color: $nav-bg;
+                }
+                &.current{
+                    background: $primary-color;
+                    color:$nav-bg;
+                }
+            }
+        }
+    }
+    &.breadcrumb{
+        display:inline-block;
+        height:30px;
+            li {
+                margin-right: 2px;
+                // height:30px;
+            a {
+                border-radius: 4px;
+                &:hover { // Using & to reference the parent selector
+                    color: $primary-color;
+                    }
+                &.current{
+                    background: $primary-color;
+                    color:$nav-bg;
+                    
+                    }
+                }
+            }
+    }
+}
+.leftbar{
+    float:left;
+    flex-flow: column;
+    flex-wrap:nowrap;
+
+    margin:0;
+    overflow: visible;
+    
+    background-color: $nav-bg;
+    padding-left: 2px;
+    li{
+        width: fit-content;
+        overflow: visible;
+        display:block;
+        width:26px;
+        padding:2px;
+        &:has(hr){
+            padding:0 2px;
+            height:12px;
+            margin-top:-6px;
+        }
+        a{
+            transition: color 0.1s ease-in-out;
+            display:flex;
+            vertical-align: middle;
+            line-height:0.8em;
+            line-height:20px;
+            font-size:17px;
+            .iconify{
+                font-size:20px;
+            }
+            .label{
+                
+                transition: width 0.3s ease-in-out;
+                display:none
+            }
+            &:hover{
+                width: fit-content;
+                z-index: 95;
+                border: 1px $primary-color solid;
+                .label{
+                    margin-left:3px;
+                    display:inline;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Simplification Examples</title>
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .active {
+            background-color: #cce5ff;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #popup {
+            width: 200px;
+            background: #fefefe;
+            border: 1px solid #999;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        .faded {
+            opacity: 0.3;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="topbar">
+                <a href="https://dmessham.ca">
+                    <span class="iconify" data-icon="mdi-home"></span>
+                    <span class="label">DMessham.ca</span>
+                </a>
+                <div></div>
+                <a href="/blog">
+                    <span class="iconify" data-icon="mdi-post"></span>
+                    <span class="label">Blog</span>
+                </a>
+                <a href="/forum">
+                    <span class="iconify" data-icon="mdi-account-multiple"></span>
+                    <span class="label">Forum</span>
+                </a>
+                <a href="/school" class="current">
+                    <span class="iconify" data-icon="mdi-school"></span>
+                    <span class="label">School</span>
+                </a>
+                <a href="/projects">
+                    <span class="iconify" data-icon="mdi-toolbox"></span>
+                    <span class="label">Projects</span>
+                </a>
+                <a href="/photography">
+                    <span class="iconify" data-icon="mdi-camera"></span>
+                    <span class="label">Photography</span>
+                </a>
+            </div>
+            <hr>
+            <div class="breadcrumb" >
+                <a href="..">
+                    <span class="iconify" data-icon="mdi-arrow-left">back</span>
+                </a>
+                <a href="/school">
+                    <span class="iconify" data-icon="mdi-folder"></span>
+                    <span class="label">School /</span>
+                </a>
+                <a href="/mult-128">
+                    <span class="iconify" data-icon="mdi-folder"></span>
+                    <span class="label">mult-128 /</span>
+                </a>
+                <a href="/mult128/whiteboard">
+                    <span class="iconify" data-icon="mdi-folder"></span>
+                    <span class="label">Whiteboard /</span>
+                </a>
+                <a href="/mult128/whiteboard/jquery.html">
+                    <span class="iconify" data-icon="mdi-file"></span>
+                    <span class="label">JQuery Demo</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <h1>jQuery Demo Examples</h1>
+
+    <!-- 1. DOM Ready -->
+    <section>
+        <h2>1. DOM Ready</h2>
+        <p id="ready-msg">Waiting for DOM to load...</p>
+    </section>
+
+    <!-- 2. Selecting and Styling -->
+    <section>
+        <h2>2. Selecting and Styling Elements</h2>
+        <button class="btn">Style Me!</button>
+        <button class="btn">Me Too!</button>
+    </section>
+
+    <!-- 3. Class Manipulation -->
+    <section>
+        <h2>3. Add / Remove Classes</h2>
+        <div id="toggle-box">Watch me change classes</div>
+        <button id="toggle-btn">Toggle Active / Hidden</button>
+    </section>
+
+    <!-- 4. Event Binding -->
+    <section>
+        <h2>4. Click Event on Multiple Cards</h2>
+        <div class="card">Click me (Card 1)</div>
+        <div class="card">Click me (Card 2)</div>
+        <div class="card">Click me (Card 3)</div>
+    </section>
+
+    <!-- 5. DOM Insertion -->
+    <section>
+        <h2>7. Insert Content</h2>
+        <button id="add-item">Add New Item</button>
+        <ul id="item-list">
+            <li>Existing Item 1</li>
+            <li>Existing Item 2</li>
+        </ul>
+    </section>
+
+    <!-- 6. Toggling Visibility -->
+    <section>
+        <h2>8. Toggle Visibility</h2>
+        <button id="toggle-para-btn">Toggle Paragraph</button>
+        <p id="toggle-para">I show and hide!</p>
+    </section>
+
+    <script>
+        // 1. DOM Ready
+        $(function () {
+            $('#ready-msg').text('✅ DOM is ready and jQuery is working!');
+        });
+
+        // 2. Select + Style
+        $('.btn').css('color', 'crimson');
+
+        // 3. Add/Remove Classes
+        $('#toggle-btn').on('click', function () {
+            $('#toggle-box').toggleClass('active hidden');
+        });
+
+        // 4. Event Binding
+        $('.card').on('click', function () {
+            $(this).toggleClass('active');
+        });
+
+        // 5. DOM Insertion
+        $('#add-item').on('click', function () {
+            $('<li>Newly Added Item</li>').appendTo('#item-list');
+        });
+
+        // 6. Toggle Visibility
+        $('#toggle-para-btn').on('click', function () {
+            $('#toggle-para').toggle();
+        });
+    </script>
+</body>
+
+</html>

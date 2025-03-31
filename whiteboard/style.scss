@@ -3,7 +3,6 @@
 @import 'navigation';
 
 .content {
-    margin-left:42px;
     background-color: $primary-color;
     color: $text-color;
     padding: 20px;
@@ -17,6 +16,11 @@
         font-size: 1em;
         opacity: 0.8;
     }
+}
+
+main{
+    padding: 20px;
+    border-radius: 5px;
 }
 
 @mixin flexbox ($direction, $justify:center) {

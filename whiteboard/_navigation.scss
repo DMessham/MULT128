@@ -1,63 +1,92 @@
+$nav-contentheight:20px;
+$nav-padding:2px;
+
+$leftbar-cwidth:30px;
+$leftbar-padding:6px;
+body > main{
+    margin:$nav-contentheight*0.5 5px 1em $leftbar-cwidth*2;
+}
+header .content, .header-content{
+    border: 2px red;
+    margin:1em 5px 1em $leftbar-cwidth*2;
+    padding:0.5em;
+    *{
+        margin:0.125em 0;
+    }
+}
 body > header{
     position: sticky;
-    top:6px;
+    top: $nav-padding*3;
+    border-radius: $nav-padding*4;
 }
-
 nav {
-    // background-color: $nav-bg;
-    border-radius: 5px 5px 0 0;
+    border-radius: $nav-padding*4;
     z-index: 90;
+    margin:0;
+    padding:0;
+    
     ul {
         list-style: none;
-        border-radius: 5px;
+        
         background-color: $nav-bg;
         display: flex;
-        padding:2px;
+        padding:$nav-padding;
+        margin:0;
+        
         li {
             display: inline-block;
-            padding:2px;
-            a {
-                text-decoration: none;
-                line-height:18px;
-                font-size:16px;
-                text-align: center;
-                vertical-align: baseline;
-                color:#fff;
-                padding:2px;
-                border-radius: 5px;
-                border: 1px transparent solid;
+            padding:$nav-padding;
+            height:$nav-contentheight+($nav-padding*3);
+            &:first-child{
+                width:$leftbar-cwidth + $leftbar-padding*2;
                 .iconify{
-                    font-size:18px;
+                    width:$leftbar-cwidth;
+                }
+            }
+            a{
+                transition: color 0.1s ease-in-out;
+                display:flex;
+                vertical-align: middle;
+                line-height:$nav-contentheight;
+                font-size:$nav-contentheight - $nav-padding;
+                text-decoration: none;
+                text-align: center;
+                color:#fff;
+                border-radius: $nav-padding*2;
+                border: 1px transparent solid;
+                background-color: $nav-bg;
+                .iconify{
+                    height:$nav-contentheight;
+                    height:$nav-contentheight;
+                    padding:$nav-padding;
+                }
+                .label{
+                    padding:$nav-padding;
+                    padding-right:$nav-padding*2;
                 }
                 &:hover { // Using & to reference the parent selector
-                    color: $primary-color;
+                    color: $nav-accent;
                     background-color: $nav-bg;
+                    border: 1px $nav-accent solid;
                 }
                 &.current{
-                    background: $primary-color;
+                    background: $nav-accent;
+                    
                     color:$nav-bg;
+                    border: 2px $nav-bg solid;
+                    border-radius: $nav-padding*2.5;
                 }
             }
         }
     }
     &.breadcrumb{
         display:inline-block;
-        height:30px;
-            li {
-                margin-right: 2px;
-                // height:30px;
+        li {
+            margin-right: $nav-padding;
             a {
-                border-radius: 4px;
-                &:hover { // Using & to reference the parent selector
-                    color: $primary-color;
-                    }
-                &.current{
-                    background: $primary-color;
-                    color:$nav-bg;
-                    
-                    }
-                }
+                border-radius: $nav-padding*2;
             }
+        }
     }
 }
 .leftbar{
@@ -69,40 +98,58 @@ nav {
     overflow: visible;
     
     background-color: $nav-bg;
-    padding-left: 2px;
+
+    height: calc((100vh) - ($nav-contentheight + $nav-padding*8)) ;
     li{
         width: fit-content;
         overflow: visible;
         display:block;
-        width:26px;
-        padding:2px;
+        width:$leftbar-cwidth+($nav-padding*3);
+        margin: calc($leftbar-padding) $nav-padding;
+        padding:$nav-padding;
         &:has(hr){
-            padding:0 2px;
-            height:12px;
-            margin-top:-6px;
+            padding:0 $nav-padding;
+            margin:0;
+            height:$leftbar-padding;
+            margin-top:calc($leftbar-padding/2);
+            margin-bottom:calc(-1.5 * $leftbar-padding);
+            width:$leftbar-cwidth  $nav-padding*2;
+        }
+        hr{
+            padding:0;
+            margin:0;
+            margin-left:calc($leftbar-cwidth*0.2);
+            width:calc($leftbar-cwidth);
+            height:0;
+        }
+        &:first-child{
+            margin-top:0;
+            padding-top:0;
+            width:$leftbar-cwidth + $nav-padding*2;
         }
         a{
-            transition: color 0.1s ease-in-out;
-            display:flex;
-            vertical-align: middle;
-            line-height:0.8em;
-            line-height:20px;
-            font-size:17px;
-            .iconify{
-                font-size:20px;
-            }
+            line-height:calc($leftbar-cwidth - ($leftbar-padding*2));
+            font-size:calc($leftbar-cwidth*0.75);
+            vertical-align:middle;
+            width:100%;
             .label{
-                
                 transition: width 0.3s ease-in-out;
-                display:none
+                display:none;
+                height:calc($leftbar-cwidth*0.66);
+                padding:$leftbar-padding;
+                padding-right:$nav-padding*2;
+            }
+            .iconify{
+                width:$leftbar-cwidth;
+                height:calc($leftbar-cwidth*0.9);
+                padding:$nav-padding $nav-padding;
             }
             &:hover{
                 width: fit-content;
                 z-index: 95;
-                border: 1px $primary-color solid;
                 .label{
-                    margin-left:3px;
-                    display:inline;
+                    margin-left:-$nav-padding;
+                    display:inline-block;
                 }
             }
         }
