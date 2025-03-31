@@ -85,15 +85,19 @@ body {
 }
 
 body > main {
-  margin: 10px 5px 1em 60px;
+  margin: 2px 50px;
 }
 
-header .content, .header-content {
+header .content {
   border: 2px red;
-  margin: 1em 5px 1em 60px;
-  padding: 0.5em;
+  margin: 0 44px;
+  padding: 0.5em 2em;
+  border-radius: 20px 20px 0 0;
+  height: -webkit-fill-available;
+  height: -moz-available;
+  height: fill;
 }
-header .content *, .header-content * {
+header .content * {
   margin: 0.125em 0;
 }
 
@@ -101,35 +105,21 @@ body > header {
   position: sticky;
   top: 6px;
   border-radius: 8px;
+  z-index: 80;
 }
 
 nav {
   border-radius: 8px;
-  z-index: 90;
-  margin: 0;
-  padding: 0;
 }
-nav ul {
-  list-style: none;
-  background-color: rgba(34, 42, 36, 0.7607843137);
-  display: flex;
+nav div {
   padding: 2px;
-  margin: 0;
+  margin-bottom: 2px;
+  height: 28px;
+  border-radius: 6px;
 }
-nav ul li {
-  display: inline-block;
-  padding: 2px;
-  height: 26px;
-}
-nav ul li:first-child {
-  width: 42px;
-}
-nav ul li:first-child .iconify {
-  width: 30px;
-}
-nav ul li a {
+nav a {
   transition: color 0.1s ease-in-out;
-  display: flex;
+  display: inline-flex;
   vertical-align: middle;
   line-height: 20px;
   font-size: 18px;
@@ -140,34 +130,83 @@ nav ul li a {
   border: 1px transparent solid;
   background-color: rgba(34, 42, 36, 0.7607843137);
 }
-nav ul li a .iconify {
+nav a .iconify {
   height: 20px;
-  height: 20px;
+  width: auto;
   padding: 2px;
 }
-nav ul li a .label {
+nav a .label {
   padding: 2px;
   padding-right: 4px;
 }
-nav ul li a:hover {
+nav a:hover {
   color: #6ba971;
   background-color: rgba(34, 42, 36, 0.7607843137);
   border: 1px #6ba971 solid;
+  z-index: 10;
 }
-nav ul li a.current {
+nav a.current {
   background: #6ba971;
-  color: rgba(34, 42, 36, 0.7607843137);
-  border: 2px rgba(34, 42, 36, 0.7607843137) solid;
-  border-radius: 5px;
+  color: black;
 }
-nav.breadcrumb {
+nav .seperator, nav .h-seperator, nav hr, nav .vert-seperator {
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: #609b66;
+  border-radius: 40px;
+  border: 1px #609b66 outset;
+}
+nav .vert-seperator {
+  width: 0;
+  height: 18px;
+  margin: 2px -1px;
+}
+nav .h-seperator, nav hr {
+  height: 0;
+  display: block;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
+  margin: 4px 6px;
+}
+nav hr {
   display: inline-block;
 }
-nav.breadcrumb li {
-  margin-right: 2px;
+nav .nav-container {
+  background-color: rgba(34, 42, 36, 0.7607843137);
+  display: flex;
+  padding: 2px;
+  margin: 0;
 }
-nav.breadcrumb li a {
-  border-radius: 4px;
+nav .topbar {
+  flex-flow: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  overflow: auto;
+}
+nav ul {
+  list-style: none;
+  background-color: rgba(34, 42, 36, 0.7607843137);
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  display: inline-block;
+  padding: 2px;
+  height: 26px;
+  vertical-align: middle;
+}
+nav .breadcrumb {
+  display: block;
+}
+nav .breadcrumb li:first-child {
+  width: 42.5px;
+}
+nav .breadcrumb li:first-child .iconify {
+  width: 34px;
 }
 
 .leftbar {
@@ -178,53 +217,51 @@ nav.breadcrumb li a {
   overflow: visible;
   background-color: rgba(34, 42, 36, 0.7607843137);
   height: calc(100vh - 36px);
+  width: 44px;
+  padding: 0;
 }
 .leftbar li {
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill;
   overflow: visible;
-  display: block;
-  width: 36px;
-  margin: 6px 2px;
-  padding: 2px;
-}
-.leftbar li:has(hr) {
-  padding: 0 2px;
-  margin: 0;
-  height: 6px;
-  margin-top: 3px;
-  margin-bottom: -9px;
-  width: 30px 4px;
-}
-.leftbar li hr {
+  height: 42.5px;
+  margin: 2.125px 2px;
   padding: 0;
-  margin: 0;
-  margin-left: 6px;
-  width: 30px;
-  height: 0;
 }
 .leftbar li:first-child {
   margin-top: 0;
   padding-top: 0;
-  width: 34px;
+  width: 38px;
+}
+.leftbar li:has(hr) {
+  padding: 0;
+  margin: 0;
+  margin-top: -8.5px;
+  margin-bottom: 4.25px;
+  width: 42.5px;
+  height: 8.5px;
 }
 .leftbar li a {
-  line-height: 18px;
-  font-size: 22.5px;
+  line-height: 29.75px;
+  padding: 2px;
   vertical-align: middle;
-  width: 100%;
+  width: 36px;
+  height: 36px;
 }
 .leftbar li a .label {
   transition: width 0.3s ease-in-out;
   display: none;
-  height: 19.8px;
-  padding: 6px;
-  padding-right: 4px;
+  height: 34px;
+  padding: 2px;
+  padding-left: 2px;
+  font-size: 23.8px;
 }
 .leftbar li a .iconify {
-  width: 30px;
-  height: 27px;
-  padding: 2px 2px;
+  width: 34px;
+  height: auto;
+  padding: 0;
+  vertical-align: middle;
 }
 .leftbar li a:hover {
   width: -moz-fit-content;
@@ -232,12 +269,11 @@ nav.breadcrumb li a {
   z-index: 95;
 }
 .leftbar li a:hover .label {
-  margin-left: -2px;
   display: inline-block;
 }
 
 .content {
-  background-color: #558b5a;
+  background-color: #609b66;
   color: #132812;
   padding: 20px;
   border-radius: 5px;
@@ -249,10 +285,46 @@ nav.breadcrumb li a {
   font-size: 1em;
   opacity: 0.8;
 }
+.content a {
+  transition: color 0.1s ease-in-out;
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px transparent solid;
+  background-color: rgba(34, 42, 36, 0.7607843137);
+  padding: 2px;
+  padding-right: 4px;
+}
+.content a .iconify {
+  height: 20px;
+  height: 20px;
+  padding: 2px;
+}
+.content a:hover {
+  color: #6ba971;
+  background-color: rgba(34, 42, 36, 0.7607843137);
+  border: 1px #6ba971 solid;
+}
+.content a.current {
+  background: #6ba971;
+  color: rgba(34, 42, 36, 0.7607843137);
+  border: 2px rgba(34, 42, 36, 0.7607843137) solid;
+  border-radius: 5px;
+}
+
+a {
+  color: rgb(100, 162, 100);
+}
 
 main {
   padding: 20px;
   border-radius: 5px;
+  border: 1px solid red;
 }
 
 .fc-col {

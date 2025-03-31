@@ -3,8 +3,8 @@
 @import 'navigation';
 
 .content {
-    background-color: $primary-color;
-    color: $text-color;
+    background-color: $text-color;
+    color:  $primary-color;
     padding: 20px;
     border-radius: 5px;
 
@@ -16,11 +16,47 @@
         font-size: 1em;
         opacity: 0.8;
     }
+    a{
+        transition: color 0.1s ease-in-out;
+        display:inline-flex;
+        vertical-align: middle;
+        line-height:$nav-contentheight;
+        font-size:$nav-contentheight - $nav-padding;
+        text-decoration: none;
+        text-align: center;
+        color:#fff;
+        border-radius: $nav-padding*2;
+        border: 1px transparent solid;
+        background-color: $nav-bg;
+        padding:$nav-padding;
+        padding-right:$nav-padding*2;
+        .iconify{
+            height:$nav-contentheight;
+            height:$nav-contentheight;
+            padding:$nav-padding;
+        }
+        &:hover { // Using & to reference the parent selector
+            color: $nav-accent;
+            background-color: $nav-bg;
+            border: 1px $nav-accent solid;
+        }
+        &.current{
+            background: $nav-accent;
+            color:$nav-bg;
+            border: 2px $nav-bg solid;
+            border-radius: $nav-padding*2.5;
+        }
+    }
+}
+
+a{
+    color:rgb(100, 162, 100)
 }
 
 main{
     padding: 20px;
     border-radius: 5px;
+    border: 1px solid red;
 }
 
 @mixin flexbox ($direction, $justify:center) {
