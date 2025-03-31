@@ -47,6 +47,7 @@ nav {
                 color:#fff;
                 border-radius: $nav-padding*2;
                 border: 1px transparent solid;
+                background-color: $nav-bg;
                 .iconify{
                     height:$nav-contentheight;
                     height:$nav-contentheight;
@@ -63,7 +64,10 @@ nav {
                 }
                 &.current{
                     background: $nav-accent;
+                    
                     color:$nav-bg;
+                    border: 2px $nav-bg solid;
+                    border-radius: $nav-padding*2.5;
                 }
             }
         }
@@ -129,8 +133,8 @@ nav {
                 padding-right:$nav-padding*2;
             }
             .iconify{
-                width:$leftbar-cwidth + $nav-padding*2;
-                height:calc($leftbar-cwidth);
+                width:$leftbar-cwidth;
+                height:calc($leftbar-cwidth*0.9);
                 padding:$nav-padding $nav-padding;
             }
             &:hover{
