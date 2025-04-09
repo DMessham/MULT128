@@ -74,12 +74,33 @@
     <section id="image-movement">
         <h2>Section 1: Image Movement</h2>
         <!-- Add your image and buttons here -->
-         <img src="neon.jpg">
+         <div>
+            <img id="section-1-img" style="position:relative" src="neon.jpg">
+         </div>
+         <div style="display:flex;">
+            <button id="up-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-up"></span> Up</button>
+            <button id="down-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-down"></span> Down</button>
+            <button id="left-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-left"></span> Left</button>
+            <button id="right-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-right"></span> Right</button>
+            <button id="reset-btn" style="width: 24%;; margin:1%;"><span class="iconify" data-icon="mdi-restore"></span> Reset</button>
+        </div>
     </section>
 
     <section id="interactive-trivia">
         <h2>Section 2: Interactive Trivia Question</h2>
         <!-- Add your trivia question and answer buttons here -->
+         <div class="question-container">
+            <p id="question-msg">click answer 1 5 times</p>
+         </div>
+         <div class="answer-container" style="display:flex;">
+            <button id="option1" style="width: 24%; margin:1%;">answer 1</button>
+            <button id="option2" style="width: 24%; margin:1%;">answer 2</button>
+            <button id="option3" style="width: 24%; margin:1%;">answer 3</button>
+            <button id="option4" style="width: 24%; margin:1%;">answer 4</button>
+         </div>
+         <div id="result-container">
+            <p id="result-msg"></p>
+         </div>
     </section>
 
     <section id="scroll-activated-image">
