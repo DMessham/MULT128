@@ -1,0 +1,21 @@
+Plan (some of this is retoactive)
+ - Librarys used
+        animate.css
+        iconify material icons
+        simplecss
+        jquery
+ - setup
+        copy paste prevous work as a base.
+        copy code snippets from bs
+        .
+ - use js & css libraries
+        add css &  js links to html
+ - fill in the sections
+        section 1; image movement
+        s2: trivia
+        s3: scroll image
+        s4: cyoa
+ - write reflection
+ - submit
+
+reflection
