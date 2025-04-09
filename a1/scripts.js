@@ -2,7 +2,7 @@ console.log("Hello world!")
 
 // image movement functions
 // image id is section-1-image
-let imageElement = $("#section-1-image")
+let imageElement = $("#section-1-img")
 
 $("document").ready(function () {
 
@@ -30,20 +30,24 @@ $("document").ready(function () {
 function imgUp(){
     // imageElement
     console.log("image up")
-    $("#section-1-image").addClass("animate__animate animate__backOutUp animate__slow");
+    imageElement.removeClass()
+    imageElement.addClass("animate__animated animate__backOutUp animate__slow");
 }
 function imgDown(){
     console.log("image down")
-    $("#section-1-image").addClass("animate__animate animate__backOutDown animate__slow");
+    imageElement.removeClass()
+    imageElement.addClass("animate__animated animate__backOutDown animate__slow");
 }
 function imgLeft(){
     console.log("image left")
-    $("#section-1-image").addClass("animate__animate animate__backOutLeft animate__slow");
+    imageElement.removeClass()
+    imageElement.addClass("animate__animated animate__backOutLeft animate__slow");
 
 }
 function imgRight(){
     console.log("image right")
-    $("#section-1-image").addClass("animate__animate animate__backOutRight animate__slow");
+    imageElement.removeClass()
+    imageElement.addClass("animate__animated animate__backOutRight animate__slow");
 
 }
 
@@ -66,7 +70,7 @@ let questionArray = [
         "a3-a1",
         "q4-a1",
         "q5-a1",
-        "Reload Page to try again"
+        "You won!"
     ],
     [
         "q1-a2",
@@ -74,7 +78,7 @@ let questionArray = [
         "a3-a2",
         "q4-a2",
         "q5-a2",
-        "Reload Page to try again"
+        "Click to restart"
     ],
     [
         "q1-a3",
@@ -82,7 +86,7 @@ let questionArray = [
         "a3-a3",
         "q4-a3",
         "q5-a3",
-        "Reload Page to try again"
+        "Click to restart"
     ],
     [
         "q1-a4",
@@ -90,7 +94,7 @@ let questionArray = [
         "a3-a4",
         "q4-a4",
         "q5-a4",
-        "Reload Page to try again"
+        "Click to restart"
     ],
 
 ]
@@ -128,5 +132,8 @@ function updateMessage(message){
 
 function scrollImgEffect(){
     console.log("image scroll event");
-    $("#section-3-image").addClass("animate__animate animate__jello animate__slow");
+    $("#section-3-image").addClass("animate__animated animate__jello animate__fast");
+    $("#section-3-image").on('animationend', function () {
+        $("#section-3-image").removeClass();
+    })
 }
