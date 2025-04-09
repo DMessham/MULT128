@@ -5,41 +5,45 @@ console.log("Hello world!")
 let imageElement = $("#section-1-image")
 
 $("document").ready(function () {
-    let upButton = $("up-btn");
-    let downButton = $("down-btn");
-    let leftButton = $("left-btn");
-    let rightButton = $("right-btn");
 
-    upButton.click(imgUp)
-    downButton.click(imgDown)
-    leftButton.click(imgLeft)
-    rightButton.click(imgRight)
+    $("#up-btn").click(imgUp)
+    $("#down-btn").click(imgDown)
+    $("#left-btn").click(imgLeft)
+    $("#right-btn").click(imgRight)
 
-    $("reset-btn").click(function () {
+    $("#reset-btn").click(function () {
         console.log("resetting image"),
         imageElement.removeClass()
     });
+
+    // s2
     $("#option1").click(option1Click)
     $("#option2").click(option2Click)
     $("#option3").click(option2Click)
     $("#option4").click(option2Click)
+
+    // s3
+    $("#scroll-activated-image").scroll(scrollImgEffect);
 });
 
 //offset() can be used to move instead of animations
 function imgUp(){
     // imageElement
     console.log("image up")
-    // imageElement.animate()
+    $("#section-1-image").addClass("animate__animate animate__backOutUp animate__slow");
 }
 function imgDown(){
     console.log("image down")
+    $("#section-1-image").addClass("animate__animate animate__backOutDown animate__slow");
 }
 function imgLeft(){
     console.log("image left")
+    $("#section-1-image").addClass("animate__animate animate__backOutLeft animate__slow");
 
 }
 function imgRight(){
     console.log("image right")
+    $("#section-1-image").addClass("animate__animate animate__backOutRight animate__slow");
 
 }
 
@@ -124,5 +128,5 @@ function updateMessage(message){
 
 function scrollImgEffect(){
     console.log("image scroll event");
-    $("#section-3-image").addClass("animate__animate animate__jello");
+    $("#section-3-image").addClass("animate__animate animate__jello animate__slow");
 }

@@ -25,6 +25,8 @@ reflection
 
 pros
  + Fun memes for the images.
+ + on click events arent as hellish
 cons
  - using someone elses css is less fun.
- - 
+ - The syntax for a lot of things are way differnet to what im used to
+ - Animate.css 
