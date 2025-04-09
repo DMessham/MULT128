@@ -132,7 +132,8 @@ function updateMessage(message){
 
 function scrollImgEffect(){
     console.log("image scroll event");
-    $("#section-3-image").addClass("animate__animated animate__jello animate__fast");
+    // This is annoying af lol
+    $("#section-3-image").addClass("animate__animated animate__bounce animate__fast");
     $("#section-3-image").on('animationend', function () {
         $("#section-3-image").removeClass();
     })

@@ -76,16 +76,16 @@
     <section style="clip-path: fill-box;">
         <h2>Section 1: Image Movement</h2>
         <!-- Add your image and buttons here -->
-         <div id="section-1-img"> 
+         <div id="section-1-img">
             <!-- added the clip so it doesnt mess with the navbar -->
-            <img src="flyingdog.png">
+            <img src="flyingdog.png" width="100%" height="auto">
          </div>
-         <div style="display:flex;">
-            <button id="up-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-up"></span> Up</button>
+         <div style="display:flex;margin-top:-1px;">
+            <button id="up-btn" style="width: 24%; margin:1% 0;"><span class="iconify" data-icon="mdi-arrow-up"></span> Up</button>
             <button id="down-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-down"></span> Down</button>
-            <button id="left-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-left"></span> Left</button>
+            <button id="left-btn" style="width: 24%; margin:1% 0;"><span class="iconify" data-icon="mdi-arrow-left"></span> Left</button>
             <button id="right-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-right"></span> Right</button>
-            <button id="reset-btn" style="width: 24%;; margin:1%;"><span class="iconify" data-icon="mdi-restore"></span> Reset</button>
+            <button id="reset-btn" style="width: 24%; margin:1% 0;"><span class="iconify" data-icon="mdi-restore"></span> Reset</button>
         </div>
     </section>
 
@@ -95,11 +95,11 @@
          <div class="question-container">
             <p id="question-msg">click answer 1 5 times</p>
          </div>
-         <div class="answer-container" style="display:flex;">
-            <button id="option1" style="width: 24%; margin:1%;">answer 1</button>
-            <button id="option2" style="width: 24%; margin:1%;">answer 2</button>
-            <button id="option3" style="width: 24%; margin:1%;">answer 3</button>
-            <button id="option4" style="width: 24%; margin:1%;">answer 4</button>
+         <div class="answer-container" style="display:flex;margin:-1px;">
+            <button id="option1" style="width: 25%; margin:1%;">answer 1</button>
+            <button id="option2" style="width: 25%; margin:1% 0;">answer 2</button>
+            <button id="option3" style="width: 25%; margin:1%;">answer 3</button>
+            <button id="option4" style="width: 25%; margin:1% 0;">answer 4</button>
          </div>
          <div id="result-container">
             <p id="result-msg"></p>
@@ -109,7 +109,7 @@
     <section>
         <h2>Section 3: Scroll-Activated Movement</h2>
         <!-- Add your scroll-activated image here -->
-         <div id="scroll-activated-image" style="overflow-y: scroll; height:600px;">
+        <div id="scroll-activated-image" style="overflow-y: scroll; height:600px; width:100%">
             <div  id="section-3-image">
                 <img src="bored.png">
                 <video controls>
@@ -128,12 +128,14 @@
         <h2>Section 4: Choose-Your-Own-Adventure</h2>
         <p>You like nethack?</p>
         <!-- This is your creative space! -->
+        <!-- i copied the iframe stuff from mdn -->
         <iframe
             title="Inline Frame Example"
             width="100%"
             height="768px"
             referrerpolicy="no-referrer"
-            src="https://guillaumebrunerie.github.io/nethack/">
+            src="https://guillaumebrunerie.github.io/nethack/"
+            style="border: 2px grey solid; border-radius: 0.25em;">
         </iframe>
     </section>
 

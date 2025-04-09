@@ -29,4 +29,4 @@ pros
 cons
  - using someone elses css is less fun.
  - The syntax for a lot of things are way differnet to what im used to
- - Animate.css 
+ - animate.css is convenient, but there arent amy cool animations for my first image
