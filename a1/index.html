@@ -62,10 +62,10 @@
                 <span class="iconify" data-icon="mdi-school"></span>
                 <span class="label">School</span>
             </a>
-            <a href="/projects">
+            <!-- <a href="/projects">
                 <span class="iconify" data-icon="mdi-toolbox"></span>
                 <span class="label">Projects</span>
-            </a>
+            </a> -->
             <a href="/photography">
                 <span class="iconify" data-icon="mdi-camera"></span>
                 <span class="label">Photography</span>
@@ -73,11 +73,12 @@
         </nav>
         
     </header>
-    <section id="image-movement">
+    <section style="clip-path: fill-box;">
         <h2>Section 1: Image Movement</h2>
         <!-- Add your image and buttons here -->
-         <div>
-            <img id="section-1-img" src="neon.jpg">
+         <div id="section-1-img"> 
+            <!-- added the clip so it doesnt mess with the navbar -->
+            <img src="flyingdog.png">
          </div>
          <div style="display:flex;">
             <button id="up-btn" style="width: 24%; margin:1%;"><span class="iconify" data-icon="mdi-arrow-up"></span> Up</button>
@@ -105,25 +106,35 @@
          </div>
     </section>
 
-    <section id="scroll-activated-image" style="height:600px;overflow-y: scroll;">
-        <h2>Section 3: Scroll-Activated Image Movement</h2>
+    <section>
+        <h2>Section 3: Scroll-Activated Movement</h2>
         <!-- Add your scroll-activated image here -->
-         <div>
-        <img id="section-3-image" src="flashlight.jpg">
-    </div>
+         <div id="scroll-activated-image" style="overflow-y: scroll; height:600px;">
+            <div  id="section-3-image">
+                <img src="bored.png">
+                <video controls>
+                    <source src="The_Amazing_World_Of_Gumball_-_Economy_Song_Short_Version360P.mp4">
+                </video>
+                <img src="grade.png">
+                <img src="egypt.png">
+                <img src="lowiqmeetup.png">
+                <img src="maze.jpg">
+                <img src="pick.jpg">
+            </div>
+        </div>
     </section>
 
     <section id="choose-your-own-adventure">
         <h2>Section 4: Choose-Your-Own-Adventure</h2>
         <p>You like nethack?</p>
         <!-- This is your creative space! -->
-        <!-- <iframe
+        <iframe
             title="Inline Frame Example"
             width="100%"
-            height="680px"
+            height="768px"
             referrerpolicy="no-referrer"
             src="https://guillaumebrunerie.github.io/nethack/">
-        </iframe> -->
+        </iframe>
     </section>
 
     <!-- Remember to add your JavaScript file link here if you create one -->
