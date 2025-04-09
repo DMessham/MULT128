@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Playground</title>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+
     <!-- Add your CSS library links here -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css"
-    />
+    
+    
+     <!-- Animate.css CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="stylesheet" href="hint.css">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
     <link rel="stylesheet" href="styles.css">
@@ -21,7 +23,7 @@
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
         crossorigin="anonymous">
     </script>
-    <script src="scripts.js"></script>
+    
 </head>
 <body>
     <header class="animate__animated animate__fadeInDown animate__slow" style="padding-bottom:0.5em;vertical-align: bottom;">
@@ -103,10 +105,12 @@
          </div>
     </section>
 
-    <section id="scroll-activated-image">
+    <section id="scroll-activated-image" style="height:600px;overflow-y: scroll;">
         <h2>Section 3: Scroll-Activated Image Movement</h2>
         <!-- Add your scroll-activated image here -->
-        <img src="flashlight.jpg">
+         <div>
+        <img id="section-3-image" src="flashlight.jpg">
+    </div>
     </section>
 
     <section id="choose-your-own-adventure">
@@ -115,5 +119,6 @@
     </section>
 
     <!-- Remember to add your JavaScript file link here if you create one -->
+    <script src="scripts.js"></script>
 </body>
 </html>

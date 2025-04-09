@@ -2,7 +2,7 @@ Plan (some of this is retoactive)
  - Librarys used
         animate.css
         iconify material icons
-        simplecss
+        simplecss - css that just uses semantic html tags with minimal classes
         jquery
  - setup
         copy paste prevous work as a base.
@@ -12,6 +12,9 @@ Plan (some of this is retoactive)
         add css &  js links to html
  - fill in the sections
         section 1; image movement
+              centered image
+              4 buttons for u/d l/r movement
+              js for buttons
         s2: trivia
         s3: scroll image
         s4: cyoa
@@ -19,3 +22,9 @@ Plan (some of this is retoactive)
  - submit
 
 reflection
+
+pros
+ + Fun memes for the images.
+cons
+ - using someone elses css is less fun.
+ - 
