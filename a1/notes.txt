@@ -26,7 +26,9 @@ reflection
 pros
  + Fun memes for the images.
  + on click events arent as hellish
+ + playing nethack in your browser is cool
 cons
  - using someone elses css is less fun.
  - The syntax for a lot of things are way differnet to what im used to
  - animate.css is convenient, but there arent amy cool animations for my first image
+ - NodeJS is a pain if the package you are trying to build has minimal documentation on dependencies, installing them manually did not work, but using yarn did?
