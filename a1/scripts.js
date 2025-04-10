@@ -57,43 +57,43 @@ function imgRight(){
 let rightAnswers = 0;
 let questionArray = [
     [   
-        "Click option 1 5 times",
-        "Click option 1 4 times",
-        "Click option 1 3 times",
-        "Click option 1 2 times",
+        "How many laptops do i own",
+        "How do i get home from school?",
+        "What podcast do i listen to most frequently",
+        "What kind of car do i own",
         "Click option 1 ",
-        "YOU WIN"
+        "Thats all, folks"
     ],
     [
-        "q1-a1",
-        "q2-a1",
-        "a3-a1",
-        "q4-a1",
-        "q5-a1",
+        "8",
+        "Walk downtown, take the bus.",
+        "Well there's your problem",
+        "2006 Toyota Yaris 3dr Hatchback",
+        "Option 1",
         "You won!"
     ],
     [
-        "q1-a2",
-        "q2-a2",
-        "a3-a2",
-        "q4-a2",
-        "q5-a2",
+        "4",
+        "Get a ride from thomas",
+        "Meidas touch",
+        "2001 Buick LeSabre Limited",
+        "Option 2",
         "Click to restart"
     ],
     [
-        "q1-a3",
-        "q2-a3",
-        "a3-a3",
-        "q4-a3",
-        "q5-a3",
+        "6",
+        "take an uber",
+        "Destination Linux",
+        "2008 Schwinn ecoTour",
+        "no",
         "Click to restart"
     ],
     [
-        "q1-a4",
-        "q2-a4",
-        "a3-a4",
-        "q4-a4",
-        "q5-a4",
+        "20",
+        "walk",
+        "the joe rogan experience",
+        "2008 BMW x5 (e70) 3.0si xDrive",
+        "no",
         "Click to restart"
     ],
 
