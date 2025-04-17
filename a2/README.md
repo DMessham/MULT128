@@ -9,11 +9,18 @@ Animal fan page thing
 
 # Plan
 
-* [X] Add images
+* [X] Add some images i already have
 * [ ] Start html
 * [ ] add cdn links
+* [ ] structure te html
 * [ ] add facts and info
+* [ ] add proper images
 * [ ] mess with styling
 
 Reflection
 -----------
+General
+
+What went well
+
+Challenges

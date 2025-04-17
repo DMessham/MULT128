@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#325F29">
+    <meta name="theme-color" content="#325F29">
+    <title>Crafty crow facts</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    
+     <!-- Animate.css CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    
+
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+</head>
+<body>
+    <header class="animate__animated animate__fadeInDown navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container-fluid">
+            <div class="gap-2 d-md-flex nav nav-tabs">
+                <a href="/" class="navbar-brand breadcrumb-item">
+                    <span><img src="https://dmessham.ca/icons/profpic_gradient" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">DMessham.ca</span>
+                </a>
+                <nav aria-label="breadcrumb" class="breadcrumb d-grid gap-2 d-md-flex nav">
+                    <a href="/" aria-label="breadcrumb" class="breadcrumb-item">
+                        <span class="iconify" data-icon="mdi-home"></span>
+                        <span class="label">Home</span>
+                    </a>
+                    <span>/</span>
+                    <a href="/school" aria-label="breadcrumb" class="breadcrumb-item">School
+                    </a>
+                    <span>/</span>
+                    <a href="/school/mult-128" aria-label="breadcrumb" class="breadcrumb-item ">Mult-128
+                    </a>
+                    <span>/</span>
+                    <a href="/school/mult128/a2" aria-current="breadcrumb page" class="breadcrumb-item active" >Assignment 2
+                    </a>
+                </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <nav aria-label="navigation" class=" nav d-grid gap-2 d-md-flex justify-content-end">
+                    <ul class="d-grid gap-2 d-md-flex justify-content-end nav">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link">
+                            <span class="iconify" data-icon="mdi-home"></span>
+                            <span class="label">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/blog" class="nav-link">
+                            <span class="iconify" data-icon="mdi-post"></span>
+                            <span class="label">Blog</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/forum" class="nav-link">
+                            <span class="iconify" data-icon="mdi-account-multiple"></span>
+                            <span class="label">Forum</span>
+                        </a>
+                    </li>
+                    <li class="nav-link active dropdown" aria-current="true">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"> 
+                            <span class="iconify" data-icon="mdi-school"></span>
+                            <span class="label">School</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown">
+                            <li><a class="dropdown-item" href="/school/" aria-current="true">Main Page</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><span>Web dev</span></li>
+                            <li><a class="dropdown-item" href="/school/mult-120">Mult120 - basic html + css</a></li>
+                            <li><a class="dropdown-item" href="/school/mult-124">mult124 - HTML + CSS</a></li>
+                            <li><a class="dropdown-item" href="/school/mult-114">mult114 - JS</a></li>
+                            <li><a class="dropdown-item" href="/school/mult-128">Mult128 - Frontend</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><span>Multimedia</span></li>
+                            <li><a class="dropdown-item" href="/photography/dailyphoto">Photography</a></li>
+                            <li><a class="dropdown-item" href="/school/">Video</a></li>
+                            <li><a class="dropdown-item" href="/school/dgtl-101">dgtl101 - audio</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><span>Marketing</span></li>
+                            <li><a class="dropdown-item" href="/school/mktg-203">mktg203 - marketing</a>
+                                <li><a class="dropdown-item" href="/school/dgtl-112">dgtl112 - social media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-link dropdown">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                            <span class="iconify" data-icon="mdi-toolbox"></span>
+                            <span class="label">Projects</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown">
+                            <li><a class="dropdown-item" href="/projects/">Main Page</a>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><span>Active</span></li>
+                            <li><a class="dropdown-item" href="/projects/ebike">Schwinn Ecotour</a></li>
+                            <li><a class="dropdown-item" href="/projects/toyota">Toyota Yaris</a></li>
+                            <li><a class="dropdown-item" href="/projects/palm">Palm Treo 700wx</a></li>
+                            <li><hr class="dropdown-divider">Abandoned<hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="/projects/buick">2001 buick lesaber (Discontinued)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/photography" class="nav-link">
+                            <span class="iconify" data-icon="mdi-camera"></span>
+                            <span class="label">Photography</span>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h1> Crafty crows</h1>
+        </header>
+
+    <section>
+        <header>
+            <h2>Habitat</h2>
+            <p>Permanent habiiat extends from northern mexico througout the USA</p>
+            <p></p>
+        </header>
+        <p></p>
+    </section>
+
+    </main>
+    <section>
+        <header>
+            <h2>Behaviour</h2>
+        </header>
+        <h3>Inteligence</h3>
+        <p>smort birb</p>
+        <h3>Tool use</h3>
+        <p>smort birb</p>
+    </section>
+
+    <section>
+        <header>
+            <h2>Picture Gallery</h2>
+        </header>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="tumblr_3ccedbf48ccbf1e841f2c2af9c068e4c_612df5e2_540.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="IMG_1483.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="IMG_9072.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="image0-356.jpg" class="d-block w-100" alt="...">
+                </div>
+                
+                <div class="carousel-item">
+                    <img src="nice-argument.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
