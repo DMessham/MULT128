@@ -14,22 +14,13 @@
     <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
 </head>
 <body>
-    <header class="animate__animated animate__fadeInDown navbar navbar-expand-lg navbar-dark sticky-top bg-body-tertiary mb-0 pb-0">
-        <div class="container-fluid">
-            
-            <div class="gap-2 d-md-flex nav nav-tabs">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a href="/" class="navbar-brand breadcrumb-item">
-                    <span><img src="https://dmessham.ca/icons/profpic_gradient" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">DMessham.ca</span>
+    <header class="animate__animated animate__fadeInDown navbar navbar-expand-lg navbar-dark navbar-sticky-top bg-body-tertiary mb-0 pb-0 pt-0">
+        <div class="container gap-2 d-md-flex nav nav-tabs pt-0 mt-0">
+            <div class="navbar-header navbar-left pt-0">
+                <a href="/" class="navbar-brand">
+                    DMessham.ca
                 </a>
-                <nav aria-label="breadcrumb" class="breadcrumb d-grid gap-2 d-md-flex nav">
-                    <a href="/" aria-label="breadcrumb" class="breadcrumb-item">
-                        <span class="iconify" data-icon="mdi-home"></span>
-                        <span class="label">Home</span>
-                    </a>
-                    <span>/</span>
+                <span class="breadcrumb gap-1 nav mb-0">
                     <a href="/school" aria-label="breadcrumb" class="breadcrumb-item">School
                     </a>
                     <span>/</span>
@@ -38,77 +29,78 @@
                     <span>/</span>
                     <a href="/school/mult128/a2" aria-current="breadcrumb page" class="breadcrumb-item active" >Assignment 2
                     </a>
-                </nav>
-                <nav aria-label="navigation" class=" nav d-grid gap-2 d-md-flex justify-content-end navbar-dark">
-                    <ul class="d-grid gap-2 d-md-flex justify-content-end nav">
-                    <li class="nav-item">
-                        <a href="/" class="nav-link">
-                            <span class="iconify" data-icon="mdi-home"></span>
-                            <span class="label">Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/blog" class="nav-link">
-                            <span class="iconify" data-icon="mdi-post"></span>
-                            <span class="label">Blog</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/forum" class="nav-link">
-                            <span class="iconify" data-icon="mdi-account-multiple"></span>
-                            <span class="label">Forum</span>
-                        </a>
-                    </li>
-                    <li class="nav-link active dropdown" aria-current="true">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                            <span class="iconify" data-icon="mdi-school"></span>
-                            <span class="label">School</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown">
-                            <li><a class="dropdown-item" href="/school/" aria-current="true">Main Page</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><span>Web dev</span></li>
-                            <li><a class="dropdown-item" href="/school/mult-120">Mult120 - basic html + css</a></li>
-                            <li><a class="dropdown-item" href="/school/mult-124">mult124 - HTML + CSS</a></li>
-                            <li><a class="dropdown-item" href="/school/mult-114">mult114 - JS</a></li>
-                            <li><a class="dropdown-item" href="/school/mult-128">Mult128 - Frontend</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><span>Multimedia</span></li>
-                            <li><a class="dropdown-item" href="/photography/dailyphoto">Photography</a></li>
-                            <li><a class="dropdown-item" href="/school/">Video</a></li>
-                            <li><a class="dropdown-item" href="/school/dgtl-101">dgtl101 - audio</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><span>Marketing</span></li>
-                            <li><a class="dropdown-item" href="/school/mktg-203">mktg203 - marketing</a></li>
-                            <li><a class="dropdown-item" href="/school/dgtl-112">dgtl112 - social media</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-link dropdown">
-                        <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
-                            <span class="iconify" data-icon="mdi-toolbox"></span>
-                            <span class="label">Projects</span>
-                        </a>
-                        <ul class="dropdown-menu dropdown">
-                            <li><a class="dropdown-item" href="/projects/">Main Page</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><span>Active</span></li>
-                            <li><a class="dropdown-item" href="/projects/ebike">Schwinn Ecotour</a></li>
-                            <li><a class="dropdown-item" href="/projects/toyota">Toyota Yaris</a></li>
-                            <li><a class="dropdown-item" href="/projects/palm">Palm Treo 700wx</a></li>
-                            <li><hr class="dropdown-divider">Abandoned<hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="/projects/buick">2001 buick lesaber (Discontinued)</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/photography" class="nav-link">
-                            <span class="iconify" data-icon="mdi-camera"></span>
-                            <span class="label">Photography</span>
-                        </a>
-                    </li>
-                </ul>
-                </nav>
+                </span>
             </div>
+            <ul class=" nav navbar-dark navbar-right">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <span class="iconify" data-icon="mdi-home"></span>
+                        <span class="label">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/blog" class="nav-link">
+                        <span class="iconify" data-icon="mdi-post"></span>
+                        <span class="label">Blog</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/forum" class="nav-link">
+                        <span class="iconify" data-icon="mdi-account-multiple"></span>
+                        <span class="label">Forum</span>
+                    </a>
+                </li>
+                <li class="nav-link active dropdown" aria-current="true">
+                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        <span class="iconify" data-icon="mdi-school"></span>
+                        <span class="label">School</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown">
+                        <li><a class="dropdown-item" href="/school/" aria-current="true">Main Page</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-header">Web dev</li>
+                        <li><a class="dropdown-item" href="/school/mult-120">Mult120 - basic html + css</a></li>
+                        <li><a class="dropdown-item" href="/school/mult-124">mult124 - HTML + CSS</a></li>
+                        <li><a class="dropdown-item" href="/school/mult-114">mult114 - JS</a></li>
+                        <li><a class="dropdown-item" href="/school/mult-128">Mult128 - Frontend</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-header">Multimedia</li>
+                        <li><a class="dropdown-item" href="/photography/dailyphoto">Photography</a></li>
+                        <li><a class="dropdown-item" href="/school/">Video</a></li>
+                        <li><a class="dropdown-item" href="/school/dgtl-101">dgtl101 - audio</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li class="dropdown-header">Marketing</li>
+                        <li><a class="dropdown-item" href="/school/mktg-203">mktg203 - marketing</a></li>
+                        <li><a class="dropdown-item" href="/school/dgtl-112">dgtl112 - social media</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-link dropdown">
+                    <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                        <span class="iconify" data-icon="mdi-toolbox"></span>
+                        <span class="label">Projects</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown">
+                        <li><a class="dropdown-item" href="/projects/">Main Page</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li  class="dropdown-header">Active</li>
+                        <li><a class="dropdown-item" href="/projects/ebike">Schwinn Ecotour</a></li>
+                        <li><a class="dropdown-item" href="/projects/toyota">Toyota Yaris</a></li>
+                        <li><a class="dropdown-item" href="/projects/palm">Palm Treo 700wx</a></li>
+                        <li><hr class="dropdown-divider">Abandoned<hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/projects/buick">2001 buick lesaber (Discontinued)</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/photography" class="nav-link">
+                        <span class="iconify" data-icon="mdi-camera"></span>
+                        <span class="label">Photography</span>
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </header>
 
@@ -134,7 +126,7 @@
         <h3>Inteligence</h3>
         <p>smort birb</p>
         <h3>Tool use</h3>
-        <p>smort birb</p>
+        <p>Crows have been know to drop nuts on roads and wait for cars to drive over them and crack them open</p>
     </section>
 
     <section>
