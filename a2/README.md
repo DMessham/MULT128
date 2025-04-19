@@ -10,9 +10,9 @@ Animal fan page thing
 # Plan
 
 * [X] Add some images i already have
-* [ ] Start html
-* [ ] add cdn links
-* [ ] structure te html
+* [X] Start html
+* [X] add cdn links
+* [ ] structure the html
 * [ ] add facts and info
 * [ ] add proper images
 * [ ] mess with styling
