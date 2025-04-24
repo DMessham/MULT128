@@ -5,7 +5,7 @@
 ## tech used
  - bootstrap
  - iconify
- - 
+ - JQuery
 
 # Page structure
  - Home
