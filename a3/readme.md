@@ -9,7 +9,6 @@
 
 # Page structure
  - Home
- - About
  - Photography
  - Portfolio
  - Projects
@@ -19,3 +18,19 @@
    - wordpress blog
    - PHPBB Forum
    - My social media
+
+# home content
+## main column
+ - about
+## 2nd column
+ - social media
+ - current thoughts
+ - games im playing
+ - reading list
+ - cool stuff
+
+# Photography content
+## main column
+ - Dailyphotos
+## 2nd column
+ - once a year specials
