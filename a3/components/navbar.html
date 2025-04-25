@@ -1,6 +1,6 @@
 <header class="navbar-dark navbar-sticky-top bg-body-tertiary pb-0 mb-2 pt-1">
     <!-- breadcrumb bar -->
-    <ul class="container breadcrumb navbar-left mb-0 pb-0 pt-0">
+    <ul class="container breadcrumb navbar-left mb-0 pb-0 pt-0" id="breadcrumb-bar">
         <li class="breadcrumb-item">
             <a href="https://dmessham.ca">
                 <span class="iconify" data-icon="mdi-home"></span>
@@ -57,8 +57,8 @@
                             <li><a class="dropdown-item" href="projects.html">Main Page</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li  class="dropdown-header">Software</li>
-                            <li><a class="dropdown-item" href="projects-palm.html">Palm Treo 700wx</a></li>
-                            <li><a class="dropdown-item" href="projects-software_preservation.html">Software Preservation</a></li>
+                            <li><a class="dropdown-item" href="projects-palm.html" id="projects_palm-tab">Palm Treo 700wx</a></li>
+                            <li><a class="dropdown-item" href="projects-software_preservation.html" id="projects_swpres-tab">Software Preservation</a></li>
                             <li><hr class="dropdown-divider"></li>
                             <li class="dropdown-header">Vehicles (on main site)</li>
                             <li><a class="dropdown-item" href="https://dmessham.ca/projects/ebike">Schwinn Ecotour</a></li>
@@ -115,5 +115,29 @@
             </div>
         </div>
     </nav>
+    <script>
+        // get the pathname and use it to fill in the breadcrumb bar
+        console.log(location)
 
+        let pathname = location.pathname
+
+        let pageNameMap = {
+            "index.html":"home",
+            "portfolio.html":"Portfolio",
+            "projects.html":"Projects",
+            "projects-palm.html":"Projects/Palm Treo",
+            "protects-software_preservation.html":"Projects/Software preservation",
+            "photography.html":"Photography"
+        }
+
+        let pageTabMap = {
+            "index.html":"#home-tab",
+            "portfolio.html":"#portfolio-tab",
+            "projects.html":"#projects-tab",
+            "projects-palm.html":"#projects_palm-tab",
+            "protects-software_preservation.html":"#projects_swpres-tab",
+            "photography.html":"#photography-tab"
+        }
+        
+    </script>
 </header>
