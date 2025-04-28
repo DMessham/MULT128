@@ -1,0 +1,55 @@
+<header class="navbar-dark navbar-sticky-top bg-body-tertiary pb-0 mb-2 pt-1">
+    <!-- breadcrumb bar -->
+    <ul class="container breadcrumb navbar-left mb-0 pb-0 pt-0" id="breadcrumb-bar">
+        <li class="breadcrumb-item">
+            <a href="https://dmessham.ca">
+                <span class="iconify" data-icon="mdi-home"></span>
+                <span class="label">DMessham.ca</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="https://dmessham.ca/school">
+                <span class="iconify" data-icon="mdi-folder"></span>
+                <span class="label">School</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="https://dmessham.ca/school/mult-128">
+                <span class="iconify" data-icon="mdi-folder"></span>
+                <span class="label">mult-128</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page" id="breadcrumb-root">
+            <a href="https://dmessham.ca/school/mult-128/a3/" class="active" aria-current="page">
+                <span class="iconify" data-icon="mdi-file"></span>
+                <span class="label">Assignment 3</span>
+            </a>
+        </li>
+    </ul>
+
+    <script>
+        // get the pathname and use it to fill in the breadcrumb bar
+        console.log(location)
+
+        let pathname = location.pathname
+
+        let pageNameMap = {
+            "index.html":"home",
+            "portfolio.html":"Portfolio",
+            "projects.html":"Projects",
+            "projects-palm.html":"Projects/Palm Treo",
+            "protects-software_preservation.html":"Projects/Software preservation",
+            "photography.html":"Photography"
+        }
+
+        let pageTabMap = {
+            "index.html":"#home-tab",
+            "portfolio.html":"#portfolio-tab",
+            "projects.html":"#projects-tab",
+            "projects-palm.html":"#projects_palm-tab",
+            "protects-software_preservation.html":"#projects_swpres-tab",
+            "photography.html":"#photography-tab"
+        }
+        
+    </script>
+</header>

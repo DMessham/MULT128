@@ -1,0 +1,162 @@
+<header class="navbar-dark navbar-sticky-top pb-0 mb-2 pt-1">
+    <!-- Start the navbar -->
+    <nav class="card">
+        <div class="card-header px-0 py-1">
+            <a href="https://dmessham.ca/school/mult-128/a3/" class="navbar-brand navbar-item py-2 px-1">
+                <img src="assets/profpic_gradient-64.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-center">
+                <span class="label align-text-center">Daniel Messham</span>
+            </a>
+        </div>
+        <div class="nav flex-column px-1 pb-0 ">
+            
+            <a href="index.html" class="text-white px-1 py-1 text-white nav-link active" id="home-tab">
+                <span class="iconify" data-icon="mdi-home"></span>
+                <span class="label">Home</span>
+            </a>
+            <hr class="px-2 my-1 text-secondary-emphasis">
+            <a href="portfolio.html" class="px-1 py-1 text-white nav-link text-white " id="portfolio-tab">
+                <span class="iconify" data-icon="mdi-briefcase"></span>
+                <span class="label">Portfolio</span>
+            </a>
+            <hr class="px-2 my-1 text-secondary-emphasis">
+            <div class="px-0 py-0">
+                <a class="text-white nav-link px-1 pt-1 pb-0" href="projects.html" >
+                    <span class="iconify" data-icon="mdi-toolbox"></span>
+                    <span class="label">Projects</span>
+                </a>
+                <ul class="list-group-flush flex-column ">
+                    <li class="list-group-item list-group-item-action disabled">
+                        Software
+                        <hr class="px-2 my-1 text-secondary-emphasis">
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a class="nav-item" href="project-palm.html" id="projects_palm-tab">
+                            Palm Treo 700wx
+                            <hr class="px-2 my-1 text-secondary-emphasis">
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a class="nav-item" href="project-software_preservation.html" id="projects_swpres-tab">
+                        Software Preservation
+                        <hr class="px-2 my-1 text-secondary-emphasis">
+                        </a>
+                    </li>
+                    <li class="list-group-item  disabled">
+                        Vehicles (on main site)
+                        <hr class="px-2 my-1 text-secondary-emphasis">
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a class="nav-item" href="https://dmessham.ca/projects/ebike">
+                            Schwinn Ecotour
+                            <hr class="px-2 my-1 text-secondary-emphasis">
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a class="nav-item" href="https://dmessham.ca/projects/toyota">
+                            Toyota Yaris
+                            <hr class="px-2 my-1 text-secondary-emphasis">
+                        </a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <a class="nav-item" href="https://dmessham.ca/projects/buick">
+                            Buick lesabre (Discontinued)
+                            <hr class="px-2 my-1 text-secondary-emphasis">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="px-2 my-1 text-secondary-emphasis">
+            <a href="photography.html" class="px-1 py-1 nav-link text-white" id="photography-tab">
+                <span class="iconify" data-icon="mdi-camera"></span>
+                <span class="label">Photography</span>
+            </a>
+        </div>
+    </nav>
+    <script>
+        // get the pathname and use it to fill in the breadcrumb bar
+        console.log(location)
+
+        let pathname = location.pathname
+
+        let pageNameMap = {
+            "index.html":"home",
+            "portfolio.html":"Portfolio",
+            "projects.html":"Projects",
+            "projects-palm.html":"Projects/Palm Treo",
+            "protects-software_preservation.html":"Projects/Software preservation",
+            "photography.html":"Photography"
+        }
+
+        let pageTabMap = {
+            "index.html":"#home-tab",
+            "portfolio.html":"#portfolio-tab",
+            "projects.html":"#projects-tab",
+            "projects-palm.html":"#projects_palm-tab",
+            "protects-software_preservation.html":"#projects_swpres-tab",
+            "photography.html":"#photography-tab"
+        }
+
+    </script>
+</header>
+
+<div class="card position-absolute top-1 start-1">
+    <div class="card-header px-1 mx-1">
+        <a href="https://dmessham.ca/school/mult-128/a3/" class=""></a>
+            <img src="assets/profpic_gradient-64.png" alt="Logo" width="24" height="24" class="d-inline-block align-text-middle">
+            <span class="label">Daniel Messham</span>
+        </a>
+    </div>
+    <div class="nav nav-pills flex-column">
+        <a href="index.html" class="text-white px-2 py-1 text-white nav-link active" id="home-tab">
+            <span class="iconify" data-icon="mdi-home"></span>
+            <span class="label">Home</span>
+        </a>
+        <a href="portfolio.html" class="px-2 py-1 text-white nav-link text-white " id="portfolio-tab">
+            <span class="iconify" data-icon="mdi-briefcase"></span>
+            <span class="label">Portfolio</span>
+        </a>
+        
+        <div class="px-0 py-0">
+            <a class="text-white nav-link px-2 py-1" href="projects.html" >
+                <span class="iconify" data-icon="mdi-toolbox"></span>
+                <span class="label">Projects</span>
+            </a>
+            <ul class="list-group-flush flex-column ">
+                <li class="list-group-item  disabled">Software </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-item" href="project-palm.html" id="projects_palm-tab">
+                        Palm Treo 700wx
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-item" href="project-software_preservation.html" id="projects_swpres-tab">
+                    Software Preservation
+                    </a>
+                </li>
+                <li class="list-group-item  disabled">
+                    Vehicles (on main site)
+                    <hr class="px-2 my-0 text-secondary-emphasis">
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-item" href="https://dmessham.ca/projects/ebike">
+                        Schwinn Ecotour
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-item" href="https://dmessham.ca/projects/toyota">
+                        Toyota Yaris
+                    </a>
+                </li>
+                <li class="list-group-item list-group-item-action">
+                    <a class="nav-item" href="https://dmessham.ca/projects/buick">
+                        Buick lesabre <br>(Discontinued)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <a href="photography.html" class="px-2 py-1 nav-link text-white" id="photography-tab">
+            <span class="iconify" data-icon="mdi-camera"></span>
+            <span class="label">Photography</span>
+        </a>
+    </div>
+</div>
