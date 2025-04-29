@@ -21,9 +21,10 @@
 
 # home content
 ## main column
- - about
+ - about / social media
+
 ## 2nd column
- - social media
+ - <!-- social media-->
  - current thoughts
  - games im playing
  - reading list
@@ -32,5 +33,18 @@
 # Photography content
 ## main column
  - Dailyphotos
+ - 
 ## 2nd column
  - once a year specials
+
+# projects main page
+## main column
+ - Text
+## 2nd column
+ - Pics & stats
+
+# Portfolio main page
+## main column
+ - Text
+## 2nd column
+ - idk
