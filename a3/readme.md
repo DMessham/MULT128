@@ -2,6 +2,7 @@
 ## Daniel Messham - Wed Apr 23rd, 2025
 
 # website type: redo my personal site
+Ideally i'd want to minimize the number of pages, as thats how my main site got so bad, but the assignmet requires atleast 5 pages
 ## tech used
  - bootstrap
  - iconify
@@ -12,8 +13,7 @@
  - Photography
  - Portfolio
  - Projects
-   - Palm treo 700wx
-   - Software Preservation
+   - Automotive
  - Links to other stuff i have already made
    - wordpress blog
    - PHPBB Forum
@@ -21,14 +21,11 @@
 
 # home content
 ## main column
- - about / social media
+ - about, games, reading list
 
 ## 2nd column
- - <!-- social media-->
+ - social media
  - current thoughts
- - games im playing
- - reading list
- - cool stuff
 
 # Photography content
 ## main column
@@ -41,10 +38,11 @@
 ## main column
  - Text
 ## 2nd column
- - Pics & stats
+ - linka to projects with dedicated pages
 
 # Portfolio main page
 ## main column
- - Text
+ - iframes to web based work
 ## 2nd column
- - idk
+ - pictures
+
